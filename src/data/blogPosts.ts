@@ -62,7 +62,7 @@ Businesses need skilled project managers:
 
 *Continue developing these skills and you'll be well on your way to a six-figure freelancing career.*`,
     author: "William",
-    publishDate: "2024-03-15",
+    publishDate: "2024-09-25",
     category: "Freelancing",
     image: "freelancing-post.jpg",
     slug: "essential-freelancing-skills-100k",
@@ -111,7 +111,7 @@ Drive organic traffic with:
 
 *Remember: Success in blogging requires patience, consistency, and value creation.*`,
     author: "William",
-    publishDate: "2024-03-12",
+    publishDate: "2024-09-26",
     category: "Blogging",
     image: "blogging-post.jpg",
     slug: "profitable-blog-guide-2024",
@@ -167,7 +167,7 @@ Direct purchasing on social platforms:
 
 *Stay ahead by implementing these trends in your marketing strategy.*`,
     author: "William",
-    publishDate: "2024-03-10",
+    publishDate: "2024-09-28",
     category: "Digital Marketing",
     image: "digital-marketing-post.jpg",
     slug: "digital-marketing-trends-2024",

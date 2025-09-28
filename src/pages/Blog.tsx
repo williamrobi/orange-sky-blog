@@ -88,7 +88,7 @@ const Blog = () => {
                         <img
                           src={imageMap[post.image]}
                           alt={post.title}
-                          className="object-cover w-full h-full"
+                          className="object-cover w-full h-full rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
                         />
                         <div className="absolute top-4 left-4">
                           <Badge 

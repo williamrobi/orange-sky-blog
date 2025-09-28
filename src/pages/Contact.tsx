@@ -51,12 +51,9 @@ const Contact = () => {
 
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent("Hi! I'm interested in learning more about Digital Growth Space.");
-    window.open(`https://wa.me/1234567890?text=${message}`, '_blank');
+    window.open(`https://wa.me/254757030305?text=${message}`, '_blank');
   };
 
-  const handleTelegramClick = () => {
-    window.open('https://t.me/digitalgrowthspace', '_blank');
-  };
 
   return (
     <Layout>
@@ -161,10 +158,10 @@ const Contact = () => {
                     <div>
                       <p className="font-medium">Email</p>
                       <a 
-                        href="mailto:support@digitalgrowthspace.com"
+                        href="mailto:williamrobi2000@gmail.com"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        support@digitalgrowthspace.com
+                        williamrobi2000@gmail.com
                       </a>
                     </div>
                   </div>
@@ -184,23 +181,13 @@ const Contact = () => {
                     Prefer instant messaging? Connect with us on your favorite platform:
                   </p>
                   
-                  <div className="flex flex-col sm:flex-row gap-3">
-                    <Button 
-                      onClick={handleWhatsAppClick}
-                      className="flex-1 bg-green-600 hover:bg-green-700 text-white"
-                    >
-                      <MessageCircle className="mr-2 h-4 w-4" />
-                      WhatsApp
-                    </Button>
-                    
-                    <Button 
-                      onClick={handleTelegramClick}
-                      className="flex-1 button-secondary text-secondary-foreground"
-                    >
-                      <Send className="mr-2 h-4 w-4" />
-                      Telegram
-                    </Button>
-                  </div>
+                  <Button 
+                    onClick={handleWhatsAppClick}
+                    className="w-full bg-green-600 hover:bg-green-700 text-white"
+                  >
+                    <MessageCircle className="mr-2 h-4 w-4" />
+                    WhatsApp
+                  </Button>
                 </CardContent>
               </Card>
 
@@ -216,7 +203,7 @@ const Contact = () => {
                       <span className="font-medium">Within 24 hours</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-muted-foreground">WhatsApp/Telegram</span>
+                      <span className="text-muted-foreground">WhatsApp</span>
                       <span className="font-medium">Within 2-4 hours</span>
                     </div>
                   </div>

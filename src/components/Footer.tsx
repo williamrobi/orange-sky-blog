@@ -18,7 +18,7 @@ const Footer = () => {
             <img 
               src={logo} 
               alt="Digital Growth Space" 
-              className="h-8 w-auto"
+              className="h-12 w-auto"
             />
           </Link>
 
