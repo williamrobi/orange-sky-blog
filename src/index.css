@@ -2,76 +2,116 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Digital Growth Space Design System - Orange/Blue/Black Theme */
+/* Kiswahili Digital Bridge Design System - Vibrant African Colors */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap');
 
 @layer base {
   :root {
-    /* Core Brand Colors */
-    --background: 210 11% 8%;
-    --foreground: 210 40% 98%;
+    /* Core Brand Colors - Vibrant African Palette */
+    --background: 45 30% 97%;
+    --foreground: 30 25% 15%;
 
-    --card: 210 11% 12%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 30 25% 15%;
 
-    --popover: 210 11% 12%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 25% 15%;
 
-    /* Primary: Orange */
-    --primary: 18 100% 62%;
+    /* Primary: Warm African Orange */
+    --primary: 24 95% 53%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 18 100% 55%;
+    --primary-hover: 24 95% 45%;
 
-    /* Secondary: Light Blue */
-    --secondary: 199 95% 60%;
+    /* Secondary: Rich Forest Green */
+    --secondary: 145 63% 32%;
     --secondary-foreground: 0 0% 100%;
-    --secondary-hover: 199 95% 50%;
+    --secondary-hover: 145 63% 25%;
 
-    /* Accent Colors */
-    --muted: 210 11% 15%;
-    --muted-foreground: 210 40% 70%;
+    /* Tertiary: Golden Yellow */
+    --tertiary: 45 93% 47%;
+    --tertiary-foreground: 30 25% 15%;
 
-    --accent: 210 11% 18%;
-    --accent-foreground: 210 40% 98%;
+    /* Accent: Deep Earth Red */
+    --accent: 15 75% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Muted Colors */
+    --muted: 45 20% 92%;
+    --muted-foreground: 30 15% 45%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 210 11% 20%;
-    --input: 210 11% 18%;
-    --ring: 18 100% 62%;
+    --border: 30 15% 85%;
+    --input: 30 15% 90%;
+    --ring: 24 95% 53%;
+
+    /* Skill Level Colors */
+    --beginner: 145 63% 42%;
+    --intermediate: 45 93% 47%;
+    --advanced: 24 95% 53%;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(18 100% 62%), hsl(25 100% 60%));
-    --gradient-secondary: linear-gradient(135deg, hsl(199 95% 60%), hsl(210 95% 65%));
-    --gradient-hero: linear-gradient(135deg, hsl(210 11% 8%) 0%, hsl(210 11% 12%) 50%, hsl(210 11% 8%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(24 95% 53%), hsl(15 75% 45%));
+    --gradient-secondary: linear-gradient(135deg, hsl(145 63% 32%), hsl(145 63% 42%));
+    --gradient-hero: linear-gradient(135deg, hsl(24 95% 53%) 0%, hsl(45 93% 47%) 50%, hsl(145 63% 32%) 100%);
+    --gradient-sunset: linear-gradient(180deg, hsl(24 95% 53%) 0%, hsl(45 93% 57%) 100%);
+    --gradient-earth: linear-gradient(135deg, hsl(30 25% 15%) 0%, hsl(15 75% 25%) 100%);
 
     /* Shadows */
-    --shadow-primary: 0 10px 30px -10px hsl(18 100% 62% / 0.3);
-    --shadow-secondary: 0 10px 30px -10px hsl(199 95% 60% / 0.3);
-    --shadow-card: 0 4px 20px hsl(210 11% 4% / 0.4);
+    --shadow-primary: 0 10px 30px -10px hsl(24 95% 53% / 0.4);
+    --shadow-secondary: 0 10px 30px -10px hsl(145 63% 32% / 0.3);
+    --shadow-card: 0 4px 20px hsl(30 25% 15% / 0.1);
+    --shadow-glow: 0 0 40px hsl(24 95% 53% / 0.3);
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-foreground: 30 25% 15%;
+    --sidebar-primary: 24 95% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 45 20% 95%;
+    --sidebar-accent-foreground: 30 25% 15%;
+    --sidebar-border: 30 15% 90%;
+    --sidebar-ring: 24 95% 53%;
   }
 
-  /* Light mode keeps same dark theme - single theme design */
+  .dark {
+    --background: 30 25% 10%;
+    --foreground: 45 30% 95%;
+
+    --card: 30 20% 14%;
+    --card-foreground: 45 30% 95%;
+
+    --popover: 30 20% 14%;
+    --popover-foreground: 45 30% 95%;
+
+    --primary: 24 95% 58%;
+    --primary-foreground: 30 25% 10%;
+    --primary-hover: 24 95% 65%;
+
+    --secondary: 145 55% 45%;
+    --secondary-foreground: 30 25% 10%;
+    --secondary-hover: 145 55% 55%;
+
+    --tertiary: 45 93% 55%;
+    --tertiary-foreground: 30 25% 10%;
+
+    --muted: 30 15% 20%;
+    --muted-foreground: 30 15% 65%;
+
+    --accent: 15 65% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --border: 30 15% 25%;
+    --input: 30 15% 20%;
+    --ring: 24 95% 58%;
+
+    --beginner: 145 55% 50%;
+    --intermediate: 45 93% 55%;
+    --advanced: 24 95% 58%;
+  }
 }
 
 @layer base {
@@ -80,12 +120,17 @@
   }
 
   body {
-    @apply bg-background text-foreground font-inter;
+    @apply bg-background text-foreground;
+    font-family: 'Nunito', sans-serif;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
 
   html {
     scroll-behavior: smooth;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
   }
 }
 
@@ -101,6 +146,13 @@
     background-clip: text;
   }
 
+  .gradient-text-hero {
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
   .button-primary {
     background: var(--gradient-primary);
     box-shadow: var(--shadow-primary);
@@ -109,7 +161,7 @@
 
   .button-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 15px 40px -10px hsl(18 100% 62% / 0.4);
+    box-shadow: 0 15px 40px -10px hsl(24 95% 53% / 0.5);
   }
 
   .button-secondary {
@@ -120,7 +172,7 @@
 
   .button-secondary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 15px 40px -10px hsl(199 95% 60% / 0.4);
+    box-shadow: 0 15px 40px -10px hsl(145 63% 32% / 0.4);
   }
 
   .card-hover {
@@ -130,5 +182,39 @@
   .card-hover:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-card);
+  }
+
+  .level-beginner {
+    background-color: hsl(var(--beginner));
+    color: white;
+  }
+
+  .level-intermediate {
+    background-color: hsl(var(--intermediate));
+    color: hsl(30 25% 15%);
+  }
+
+  .level-advanced {
+    background-color: hsl(var(--advanced));
+    color: white;
+  }
+
+  .african-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f97316' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .wave-divider {
+    position: relative;
+  }
+
+  .wave-divider::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.37,118.44,150.09,75.84,321.39,56.44Z' fill='%23faf5f0'/%3E%3C/svg%3E") no-repeat bottom;
+    background-size: cover;
   }
 }
