@@ -10,9 +10,10 @@ const TikTokIcon = () => (
 interface SocialLinksProps {
   variant?: "default" | "colorful";
   size?: "sm" | "md" | "lg";
+  className?: string;
 }
 
-const SocialLinks = ({ variant = "default", size = "md" }: SocialLinksProps) => {
+const SocialLinks = ({ variant = "default", size = "md", className = "" }: SocialLinksProps) => {
   const socialLinks = [
     { 
       name: "TikTok", 
@@ -54,7 +55,7 @@ const SocialLinks = ({ variant = "default", size = "md" }: SocialLinksProps) => 
 
   if (variant === "colorful") {
     return (
-      <div className="flex flex-wrap gap-3">
+      <div className={`flex flex-wrap gap-3 ${className}`}>
         {socialLinks.map((social) => (
           <a
             key={social.name}
@@ -75,7 +76,7 @@ const SocialLinks = ({ variant = "default", size = "md" }: SocialLinksProps) => 
   }
 
   return (
-    <div className="flex gap-3">
+    <div className={`flex gap-3 ${className}`}>
       {socialLinks.map((social) => (
         <a
           key={social.name}
